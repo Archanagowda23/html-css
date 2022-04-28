@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+   	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Cards Gallery</title>
+		<style>
+			.cards {
+				display: flex;
+				flex-wrap: wrap;
+				flex-direction: row;
+				align-items: stretch;
+				
+			}
+
+			.card {
+				flex: 0 0 200px;
+				margin: 10px;
+				border: 1px solid #ccc;
+				box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+			}
+
+			.card img {
+				max-width: 100%;
+				align-content: center;
+			}
+
+			.card .content {
+				padding: 0 20px 20px;
+			}
+
+			.card .content>button {
+				background: gray;
+				border: 0;
+				color: white;
+				padding: 10px;
+				width: 100%;
+			}
+
+			.card:nth-child(1) {
+				width: 420px;
+			}
+		</style>
+	</head>
+
+	<body class="cards">
+		<article class="card">
+			<img src="friends.jpeg" >
+			<div class="content">
+				<h3>F.R.I.E.N.D.S</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet lorem libero. Donec commodo
+					molestie
+					varius. </p>
+				
+				<a href="https://en.wikipedia.org/wiki/Friends">Read More</a>
+			</div>
+		</article>
+
+        <article class="card">
+			<img src="moneyhiest.jpg">
+			<div class="content">
+				<h3>Money Heist</h3>
+				<p>Money Heist
+                    is a Spanish heist crime drama television series created by Álex Pina.
+                    The series traces two long-prepared heists led by the Professor</p>
+				<button>Read More</button>
+			</div>
+		</article>
+	</body>
+
+</html>
